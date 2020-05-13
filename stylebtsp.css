@@ -40,7 +40,7 @@
     background-color: lightgrey;
     padding: 6px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   footer p { display: none !important; }
 }
   @media (min-width: 100px) {
@@ -90,13 +90,22 @@
   .fwpp {
     display: inline-block;
     width: 10vw;
-    height: 10vh;
+    height: 13vh;
 }
   .fwpp img {
-    height: 100%; 
-    padding-top: 2em;
+    height: 12.2vh; 
+    padding-top: 1em;
   }
   
+  .finsta {
+    display: inline-block;
+    width: 10vw;
+    height: 13vh;
+  }
+  .finsta img {
+    height: 11vh; 
+    padding-top: 1.4em;
+  }
   footer p {
     color: white;
     display: inline-block;
