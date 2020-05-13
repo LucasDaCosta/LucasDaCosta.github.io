@@ -40,9 +40,11 @@
     background-color: lightgrey;
     padding: 6px;
 }
-
+@media only screen and (max-width: 400px) {
+  footer p { display: none !important; }
+}
   @media (min-width: 100px) {
-
+  
   .bd-placeholder-img-lg {
       font-size: 3.5rem;
 }
