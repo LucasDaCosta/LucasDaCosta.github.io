@@ -1,58 +1,45 @@
-function calcNum(num) {
-  if (typeof gvisor == 'undefined') {
-     document.calcform.visor.value = '';
-  }
-  document.calcform.visor.value = document.calcform.visor.value + num;
-  gvisor = 1;
-}
+function valimail() {
+     if (
+          document.getElementById("inputEmail4").value == ""
+     )
+          alert("Email invalido");
 
-// Função que limpa a calculadora e todas as variáveis existentes.
-function calcLimpar() {
-  document.calcform.visor.value = '';
-  delete gvalor;
-  delete goper;
-  delete gvisor;
-}
+     else if (
+          document.getElementById("inputEmail4").value.indexOf(".") == -1
+     )
+          alert("Email invalido");
 
-// Função que executa as operações básicas da calculadora
-function calcOper(oper, valor1, valor2) {
-  if (oper == "somar") {
-     var valor = parseFloat(valor1) + parseFloat(valor2);
-  } else {
-     if (oper == "subtrair") {
-        var valor = valor1 - valor2;
-     } else {
-        if (oper == "multiplicar") {
-           var valor = valor1 * valor2;
-        } else {
-           var valor = valor1 / valor2;
-        }
-     }
-  }
+     else if (
+          document.getElementById("inputEmail4").value.indexOf("@") == -1
+     )
+          alert("Email invalido");
 
-  return(valor);
-}
+     else if (
+          document.getElementById("inputPassword4").value == ""
+     )
+          alert("Senha invalida")
 
-// Função do algoritmo de "passagem" das ações do usuário
-function calcParse(oper) {
-  var valor = document.calcform.visor.value;
-  delete gvisor;
+     else if (
+          document.getElementById("inputPassword4").value != document.getElementById("confirmPassword").value
+     )
+          alert("Confirmação de senha inválida")
 
-  if (typeof goper != 'undefined' && oper == 'resultado') {
-     gvalor = calcOper(goper, gvalor, valor);
-     document.calcform.visor.value = gvalor;
-     delete oper;
-     delete gvalor;
-     return(0);
-  }
+     else if (
+          document.getElementById("inputAddress").value == ""
+     )
+          alert("Endereço invalido")
 
-  if (typeof gvalor != 'undefined') {
-     gvalor = calcOper(goper, gvalor, valor);
-     goper = oper;
-     document.calcform.visor.value = gvalor;
-  } else {
-     gvalor = valor;
-     goper = oper;
-  }
+     else if (
+          document.getElementById("inputCity").value == ""
+     )
+          alert("Cidade invalida")
 
-}
+     else if (
+          document.getElementById("inputZip").value == ""
+     )
+          alert("CEP invalido")
+
+     else (
+          alert("Cadastro efetuado com sucesso")
+     )
+}    

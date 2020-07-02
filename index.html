@@ -1,50 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Calculadora Facul</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
-<body>
+<!-- fim head -->
 
+<body>
   <script src="main.js"></script>
-  <form name="calcform" method="post" action="">
-     <fieldset>
-        <legend>Calculadora</legend>
+
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand">Usguri
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Junte-se</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Info
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Quem somos</a>
+              <a class="dropdown-item" href="#">O que fazemos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Integrantes</a>
+            </div>
+          </li>
+      </div>
+    </nav>
+    <div class="jumbotron bg-light">
+      <h1 class="display-4 hlogo">Ehusguri</h1>
+      <p class="lead">Eh usguri e nn tem jeito, mas as vzs tem</p>
+      <hr class="my-4">
+      <p>Caso queira fazer parte dos guri clique no botão abaixo</p>
+      <a class="btn btn-primary btn-lg btn-dark" href="form.html" role="button">Junte-se</a>
+    </div>
+  </header>
+
+  <!-- fim do header -->
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="D:\images\poze.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="D:\images\poze.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
   
-        <input type="text" name="visor" id="visor" />
-  
-        <table id="calc">
-           <tr>
-              <td><input type="button" name="num9" class="num" value="9" onclick="calcNum(9)" /></td>
-              <td><input type="button" name="num8" class="num" value="8" onclick="calcNum(8)" /></td>
-              <td><input type="button" name="num7" class="num" value="7" onclick="calcNum(7)" /></td>
-              <td><input type="button" name="somar" class="oper" value="+" onclick="calcParse('somar')" /></td>
-           </tr>
-           <tr>
-              <td><input type="button" name="num6" class="num" value="6" onclick="calcNum(6)" /></td>
-              <td><input type="button" name="num5" class="num" value="5" onclick="calcNum(5)" /></td>
-              <td><input type="button" name="num4" class="num" value="4" onclick="calcNum(4)" /></td>
-              <td><input type="button" name="subtrair" class="oper" value="-" onclick="calcParse('subtrair')" /></td>
-           </tr>
-           <tr>
-              <td><input type="button" name="num3" class="num" value="3" onclick="calcNum(3)" /></td>
-              <td><input type="button" name="num2" class="num" value="2" onclick="calcNum(2)" /></td>
-              <td><input type="button" name="num1" class="num" value="1" onclick="calcNum(1)" /></td>
-              <td><input type="button" name="multiplicar" class="oper" value="*" onclick="calcParse('multiplicar')" /></td>
-           </tr>
-           <tr>
-              <td><input type="button" name="num0" class="num" value="0" onclick="calcNum(0)" /></td>
-              <td><input type="button" name="igual" class="num" value="=" onclick="calcParse('resultado')" /></td>
-              <td><input type="button" name="limpar" class="num" value="AC" onclick="calcLimpar()" /></td>
-              <td><input type="button" name="dividir" class="oper" value="/" onclick="calcParse('dividir')" /></td>
-           </tr>
-        </table>
-     </fieldset>
-  </form>
-  
-  </body>
-  </html>
+    </article>
+    </section>
+    <!-- Fim section -->
+
+    <aside class="col-md-4">
+      <article class="container">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="D:\images\poze.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="D:\images\poze.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </aside>
+
+    <!-- fim aside -->
+
+  </div>
+  </div>
+
+
+
+  <footer>
+    <div class="col-md-12">
+      <div class="footlogo col-md-6">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&amp;display=swap" rel="stylesheet">
+        EHUS GURI
+      </div>
+      <span class="col-md-6">Tudo sobre Rap, Hip-hop e estilo</span>
+    </div>
+  </footer>
+
+  <!-- fim footer -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

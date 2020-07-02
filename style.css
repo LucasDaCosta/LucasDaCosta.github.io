@@ -1,36 +1,69 @@
-#visor {
-    background-color: #bdffb4;
-    text-align: right;
- }
- 
- table {
-    margin: 0 auto 0 auto;
- }
- 
- form fieldset {
-    margin: 10px auto 10px auto;
-    width: 40%;
-    border: solid black 1px;
-    padding: 3%;
-    margin-bottom: 10px;
- }
- 
- form input {
+.columnimg {
+    display: flex;
+    width: 35%;
+    padding-top: 2em;
+}
+
+.hlogo {    
+    width: 27%;
+    display: inline-block;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 60px;
+    color: #343a40;
+}
+
+.card {
+    padding: 1.2em;
+}
+
+.cadah1 {
+    text-align: center;
+}
+
+section article {
+    float: left;
+}
+
+aside article {
+    float: left;
+    padding-top: 1em;
+    width: 30%;
+}
+
+aside img {
+    width: 80%;
+}
+
+footer {
+
+    background: #343a40;
     width: 100%;
-    border: solid #ccc 1px;
-    font-size: 11px;
-    margin-bottom: 10px;
- }
- 
- form input.num {
-    display: block;
-    width: 24px;
-    height: 24px;
- }
- 
- form input.oper {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-color: #b2b2b2;
- }
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    clear: both;
+    display: inline-block;
+    padding: 2em;
+}
+
+.footlogo {
+    width: 27%;
+    display: inline-block;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 60px;
+    color: white;
+}
+
+footer span {
+    color: white;
+    width: 18%;
+}
+
+
+footer h3 {       
+    color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 2em;
+}
